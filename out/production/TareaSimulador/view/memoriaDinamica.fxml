@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="551.0" prefWidth="846.0" style="-fx-background-color: #222831;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MemoriaDinamica">
+   <children>
+      <ChoiceBox fx:id="selectAlgoritmo" layoutX="110.0" layoutY="161.0" prefHeight="25.0" prefWidth="116.0" />
+      <TextField fx:id="boxSpaceMemory" layoutX="28.0" layoutY="431.0" prefHeight="25.0" prefWidth="79.0" promptText="Espacio" />
+      <TextField fx:id="boxAgregarProcesos" layoutX="28.0" layoutY="161.0" prefHeight="25.0" prefWidth="79.0" promptText="MB" />
+      <Button fx:id="buttonAgregarProceso" layoutX="28.0" layoutY="200.0" mnemonicParsing="false" onAction="#agregarProceso" text="Agregar" />
+      <Button fx:id="buttonSetSpaceMemory" layoutX="28.0" layoutY="470.0" mnemonicParsing="false" onAction="#setEspacio" prefHeight="25.0" prefWidth="79.0" text="Establecer" />
+      <Label fx:id="verEspacioMemoria" layoutX="14.0" layoutY="513.0" text="Espacio:" textFill="WHITE" />
+      <PieChart fx:id="pieChartStatusMemory" layoutX="332.0" layoutY="113.0" style="-fx-background-color: white;" title="Memoria" />
+      <AnchorPane layoutY="-100.0" prefHeight="200.0" prefWidth="846.0" style="-fx-background-color: #00ADB5;">
+         <children>
+            <Text fill="WHITE" layoutX="14.0" layoutY="180.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Memoria Dinamica" wrappingWidth="207.13671875">
+               <font>
+                  <Font name="System Bold" size="23.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+      <Text fill="WHITE" layoutX="28.0" layoutY="132.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Agregar proceso">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="22.0" layoutY="413.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cambiar el tamaño de la memoria">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <TextField fx:id="txtKillProcess" layoutX="28.0" layoutY="301.0" prefHeight="25.0" prefWidth="79.0" promptText="Sector" />
+      <Button layoutX="110.0" layoutY="301.0" mnemonicParsing="false" onAction="#endProcess" text="Terminar" />
+      <Text fill="WHITE" layoutX="24.0" layoutY="280.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Terminar proceso">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>
