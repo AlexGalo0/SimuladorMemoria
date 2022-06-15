@@ -19,6 +19,8 @@
             <graphic>
                <ImageView fitHeight="92.0" fitWidth="91.0" pickOnBounds="true" preserveRatio="true">
                   <image>
+
+                      
                      <Image url="@../resources/memoriaFija.png" />
                   </image>
                </ImageView>
