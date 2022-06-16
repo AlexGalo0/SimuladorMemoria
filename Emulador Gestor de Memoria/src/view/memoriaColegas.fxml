@@ -7,40 +7,40 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane prefHeight="489.0" prefWidth="632.0" style="-fx-background-color: #222831;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MemoriaColegas">
+<AnchorPane prefHeight="489.0" prefWidth="632.0" style="-fx-background-color: #73AB84;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MemoriaColegas">
    <children>
-      <AnchorPane layoutY="-1.0" prefHeight="94.0" prefWidth="632.0" style="-fx-background-color: #00ADB5;">
+      <AnchorPane layoutY="-1.0" prefHeight="95.0" prefWidth="632.0" style="-fx-background-color:#73AB84;">
          <children>
-            <Text fill="WHITE" layoutX="14.0" layoutY="76.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sistema de colegas">
+            <Text fill="WHITE" layoutX="250.0" layoutY="76.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Memoria colegas">
                <font>
-                  <Font name="System Bold" size="23.0" />
+                  <Font name="Times New Roman" size="30.0" />
                </font>
             </Text>
          </children>
       </AnchorPane>
-      <TextField fx:id="txtSpaceMemory" layoutX="224.0" layoutY="195.0" />
-      <Button layoutX="391.0" layoutY="195.0" mnemonicParsing="false" onAction="#setMemorySize" text="Establecer" />
+      <TextField fx:id="txtSpaceMemory" layoutX="224.0" layoutY="170.0" />
+      <Button layoutX="250.0" layoutY="210.0" mnemonicParsing="false" onAction="#setMemorySize" text="Confirmar" />
       <TextField fx:id="txtProcessSize" layoutX="224.0" layoutY="277.0" />
       <Button layoutX="223.0" layoutY="327.0" mnemonicParsing="false" onAction="#addProcess" text="Asignar" />
-      <Button layoutX="298.0" layoutY="327.0" mnemonicParsing="false" onAction="#quitProcess" text="Desasginar" />
-      <Text fill="WHITE" layoutX="185.0" layoutY="169.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ingrese el tamaño de la memoria">
+      <Button layoutX="298.0" layoutY="327.0" mnemonicParsing="false" onAction="#quitProcess" text="Quitar" />
+      <Text fill="WHITE" layoutX="185.0" layoutY="150.0" strokeType="OUTSIDE" strokeWidth="0.0" text="tamaño de la memoria">
          <font>
-            <Font name="System Bold" size="18.0" />
+            <Font name="Times New Roman" size="25.0" />
          </font>
       </Text>
-      <Text fill="WHITE" layoutX="185.0" layoutY="259.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ingrese el tamaño del proceso">
+      <Text fill="#FCFFFC" layoutX="185.0" layoutY="259.0" strokeType="OUTSIDE" strokeWidth="0.0" text="tamaño del proceso">
          <font>
-            <Font name="System Bold" size="18.0" />
+            <Font name="Times New Roman" size="25.0" />
          </font>
       </Text>
-      <Label fx:id="statusMemorySize" layoutX="14.0" layoutY="448.0" prefHeight="27.0" prefWidth="254.0" text="Tamaño:" textFill="WHITE">
+      <Label fx:id="statusMemorySize" layoutX="250.0" layoutY="448.0" prefHeight="27.0" prefWidth="300.0" text="Tamaño:" textFill="#FCFFFC">
          <font>
-            <Font size="18.0" />
+            <Font size="20.0" />
          </font>
       </Label>
-      <Label fx:id="statusProcessMade" layoutX="175.0" layoutY="370.0" prefHeight="21.0" prefWidth="296.0" textFill="#fcfcfc">
+      <Label fx:id="statusProcessMade" layoutX="175.0" layoutY="370.0" prefHeight="21.0" prefWidth="300.00" textFill="#FCFFFC">
          <font>
-            <Font size="15.0" />
+            <Font size="25.0" />
          </font>
       </Label>
    </children>
